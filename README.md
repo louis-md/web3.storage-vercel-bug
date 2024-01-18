@@ -3,7 +3,7 @@ This minimal reproduction example has been created by following these steps:
 1. Init app & add dependencies
 ```bash
 npx create-next-app web3.storage-vercel-bug
-pnpm add @ipld/car @ucanto/core @ucanto/principal @web3-storage/access @web3-storage/w3up-client web3.storage busboy
+pnpm add @ipld/car @ucanto/core @ucanto/principal @web3-storage/access @web3-storage/w3up-client busboy
 ```
 
 2. Add pages/api/web3storage.ts

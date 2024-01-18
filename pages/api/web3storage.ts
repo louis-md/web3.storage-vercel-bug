@@ -1,10 +1,10 @@
 import { NextApiRequest, NextApiResponse, type NextApiHandler } from 'next'
 import { create, type Client } from '@web3-storage/w3up-client'
+import type { FileLike } from '@web3-storage/w3up-client/types'
 import { StoreMemory } from '@web3-storage/access/stores/store-memory'
 import { importDAG } from '@ucanto/core/delegation'
 import type { API } from '@ucanto/core'
 import { parse, type Block } from '@ucanto/principal/ed25519'
-import type { Filelike } from 'web3.storage'
 import { CarReader } from '@ipld/car'
 import busboy, { type FileInfo } from 'busboy'
 import { type Readable } from 'stream'
@@ -33,7 +33,7 @@ export const config = {
   }
 }
 const uploadFileToWeb3Storage = async (
-  file: Filelike,
+  file: FileLike,
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<string | undefined> => {
