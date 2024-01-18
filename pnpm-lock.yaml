@@ -37,6 +37,9 @@ dependencies:
     version: 4.5.5(node-fetch@2.7.0)
 
 devDependencies:
+  '@types/busboy':
+    specifier: ^1.5.3
+    version: 1.5.3
   '@types/node':
     specifier: ^20
     version: 20.11.5
@@ -450,6 +453,12 @@ packages:
     dependencies:
       tslib: 2.6.2
     dev: false
+
+  /@types/busboy@1.5.3:
+    resolution: {integrity: sha512-YMBLFN/xBD8bnqywIlGyYqsNFXu6bsiY7h3Ae0kO17qEuTjsqeyYMRPSUDacIKIquws2Y6KjmxAyNx8xB3xQbw==}
+    dependencies:
+      '@types/node': 20.11.5
+    dev: true
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
